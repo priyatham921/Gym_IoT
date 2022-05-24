@@ -6,7 +6,8 @@ window.onload = function () {
 
   function onConnect() {
     console.log("Connected to mqtt server at ", host, ":", port);
-    document.getElementById("status").innerHTML = "Connected to Mqtt Broker";
+    document.getElementById("status").innerHTML =
+      "Connected to Broker at <br>broker-cn.emqx.io:8084";
 
     //mqtt.send(messagex);
 
