@@ -6,7 +6,7 @@ connected = False
 messageRecieved = False
 
 
-count = 0
+
 def on_connect(client,userdata,flags,rc):
     if rc==0:
         print("client is connected to broker\n")
@@ -18,10 +18,8 @@ def on_connect(client,userdata,flags,rc):
 
 
 def on_message(client, userdata, message):
-    global count
-    if count == 3:
-        count = 0
-        print("\n\n")
+    
+    print("\n")
     #Trying to print time stamp 
     #print(time.time())
     topic = str(message.topic)
@@ -29,7 +27,7 @@ def on_message(client, userdata, message):
     print(topic + "  :  " + msg)
     #print(type(message.payload.decode("utf-8")))
     
-    count += 1
+    
     
 
 
