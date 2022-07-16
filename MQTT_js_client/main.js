@@ -14,6 +14,7 @@ window.onload = function () {
   function buttonState() {
     accData.button = true;
   }
+
   const element = document.getElementById("count");
   element.addEventListener("click", buttonState);
 

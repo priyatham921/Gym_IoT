@@ -1,0 +1,16 @@
+# Overview
+
+- We read accelerometer sensor data from our mobile phone.
+- Then, we are sending this data to a Raspberry Pi device that is present on the local network using MQTT protocol.
+- The agenda is to analyze the data in real-time to count the number of reps of curls a person is doing.
+- Paralelly we also log the recieved data on the Raspberry Pi.
+
+# MQTT
+
+Mqtt is one of the standard messaging protocols for the Internet of Things(IoT). It is designed for connecting remote devices with minimal bandwidth.
+
+## Publish/Subscribe Architecture
+
+MQTT protocol follows a publish/subscribe architecture.
+There will be a Broker on a local network or in the cloud based on our requirement.(server).
+All the clients
